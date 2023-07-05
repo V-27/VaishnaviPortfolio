@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(19, 0, 45);
+            color: aqua;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: black;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: azure;
+        }
+
+        .left {
+            font-size: 2rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+            width: 34px;
+            font-size: 2rem;
+            font-style: inherit;
+            color: azure;
+        }
+
+        .rightSection {
+
+            width: 34px;
+        }
+
+        .rightSection img {
+            width: 90%;
+            margin: 3px;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            color: azure;
+            height: 80vh;
+
+        }
+
+        main hr {
+
+            height: 1.2px;
+            margin: 40 px;
+        }
+
+        .box {
+            background-color: azure;
+            width: 80vw;
+            height: 2px;
+            margin: 54px 0;
+            display: flex;
+        }
+
+        h1 {
+            margin: 30px;
+        }
+
+        .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: azure;
+            margin: 0 150px;
+        }
+
+        .image-top {
+            width: 40px;
+            position: relative;
+            top: -45px;
+            left: -12px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 68px;
+            width: 150px;
+            left: -30px;
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 90px;
+            color: gray;
+            width: 150px;
+            font-size: 20px;
+            left: -30px;
+        }
+
+        footer {
+            background-color: black;
+            color: aqua;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+        }
+
+        .footer {
+            margin-top: 10px;
+            display: flex;
+            height: 15vh;
+            justify-content: center;
+
+
+        }
+
+        button {
+            padding: 4px;
+            margin-top: 20px;
+
+        }
+
+        .btn {
+            padding: 3px;
+            background-color: black;
+            color: white;
+            height: 40px;
+            border: 3px solid aqua;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Vaishnavi's Portfolio </div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="paper work.pdf"><button class="btn">Mega Project</button></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection"> Hello! I am <b>Vaishnavi Balaji Malwadkar</b>
+                <div>and</div> <span id="element"></span>
+                <div class="buttons">
+                    <a href="Vaishnavi Malwadkar Resume.pdf" download><button class="btn">Download Resume</button></a>
+                    <a href="https://github.com/V-27"><button class="btn">Visit Github</button></a>
+                </div>
+            </div>
+
+
+            <div class="rightSection"><img src="electronics.png" alt=""></div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <h1>Education</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="graduation.png" alt="">
+                    <div class="vertical-title">
+                        <b>Graduation(2023)</b>
+
+                    </div>
+                    <div class="vertical-desc">
+                        DKTE’S Textile & Engineering Institute, Ichalkaranji.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="highschool.png" alt="">
+                    <div class="vertical-title">
+                        <b>HSC (2019)</b>
+
+                    </div>
+                    <div class="vertical-desc">
+                        Willingdon College sangli.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="School.png" alt="">
+                    <div class="vertical-title">
+                        <b>SSC (2017)</b>
+
+                    </div>
+                    <div class="vertical-desc">
+                        Pradnya Prabodhini Prashala Sangli.
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="first">
+                <h3>Contact </h3>
+                <a href="mailto:vaishnavimalwadkar27@gmail.com"><button class="btn">Gmail</button></a>
+
+                <a href="https://www.linkedin.com/in/vaishnavimaladkar27/"><button class="btn">Linked in</button></a>
+
+
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['I am an <b>Electronics Engineer. </b>',],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
